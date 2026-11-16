@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roteiros | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-roteiros{--main:#16a085;}
+#pagina-roteiros .destaque{border-top:5px solid #16a085;}
+#pagina-roteiros h2{color:#16a085;}
+</style></head>
+<body id="pagina-roteiros">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html" class=ativo>Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Roteiros</h2>
+<div class="card destaque"><h3>Calculadora de viagem</h3>
+<label>Dias<input id="dias" type="number" min="1" value="7"></label>
+<label>Diária por pessoa (R$)<input id="diaria" type="number" min="0" value="300"></label>
+<label>Pessoas<input id="pessoas" type="number" min="1" value="2"></label>
+<button onclick="calcular()">Calcular</button><p id="total" class="resultado">Resultado aparece aqui.</p></div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página roteiros.html</footer>
+<script src="script.js"></script>
+</body></html>

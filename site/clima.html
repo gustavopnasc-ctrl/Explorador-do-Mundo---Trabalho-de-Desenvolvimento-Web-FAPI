@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API Clima | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-clima{--main:#0288d1;}
+#pagina-clima .destaque{border-top:5px solid #0288d1;}
+#pagina-clima h2{color:#0288d1;}
+</style></head>
+<body id="pagina-clima">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html" class=ativo>API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>API Clima</h2>
+<div class="card destaque"><p>API: <b>Open-Meteo</b> (sem chave).</p>
+<input id="cidade" placeholder="Ex.: Curitiba"><br><button onclick="buscarClima()">Ver clima</button>
+<div id="res" class="resultado">Digite uma cidade.</div></div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página clima.html</footer>
+<script src="script.js"></script>
+</body></html>

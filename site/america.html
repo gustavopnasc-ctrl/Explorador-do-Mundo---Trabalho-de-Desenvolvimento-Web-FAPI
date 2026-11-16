@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>América | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-america{--main:#c0392b;}
+#pagina-america .destaque{border-top:5px solid #c0392b;}
+#pagina-america h2{color:#c0392b;}
+</style></head>
+<body id="pagina-america">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html" class=ativo>América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>América</h2>
+<div class="card destaque"><div class="emoji">🗽</div><p>Do gelo do Alasca à Patagônia, a América reúne metrópoles, florestas e culturas diversas.</p></div>
+<div class="card"><h3>Destinos imperdíveis</h3><ul><li>Rio de Janeiro, Brasil</li><li>Machu Picchu, Peru</li><li>Nova York, EUA</li><li>Cancún, México</li></ul></div>
+<button id="btn-cur" onclick="mostrarCuriosidade()">Mostrar curiosidade</button>
+<div id="curiosidade" class="card oculto">💡 A Amazônia produz cerca de 20% do oxigênio liberado por florestas do planeta (estimativa popular, debatida).</div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página america.html</footer>
+<script src="script.js"></script>
+</body></html>

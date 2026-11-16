@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galeria | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-galeria{--main:#e84393;}
+#pagina-galeria .destaque{border-top:5px solid #e84393;}
+#pagina-galeria h2{color:#e84393;}
+</style></head>
+<body id="pagina-galeria">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html" class=ativo>Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Galeria</h2>
+<p>Filtre os cartões:</p>
+<button onclick="filtrar('todos')">Todos</button> <button onclick="filtrar('natureza')">Natureza</button> <button onclick="filtrar('cidade')">Cidades</button>
+<div class="grid" style="margin-top:14px">
+<div class="card item-galeria" data-tipo="natureza"><div class="emoji">🏔️</div><p>Montanhas</p></div>
+<div class="card item-galeria" data-tipo="natureza"><div class="emoji">🏝️</div><p>Ilhas</p></div>
+<div class="card item-galeria" data-tipo="cidade"><div class="emoji">🌆</div><p>Metrópoles</p></div>
+<div class="card item-galeria" data-tipo="cidade"><div class="emoji">🕌</div><p>Cidades históricas</p></div>
+<div class="card item-galeria" data-tipo="natureza"><div class="emoji">🌋</div><p>Vulcões</p></div></div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página galeria.html</footer>
+<script src="script.js"></script>
+</body></html>

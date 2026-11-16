@@ -1,0 +1,23 @@
+/* CSS EXTERNO - estilos globais (seletores de tag, classe e id) */
+:root{--bg:#f4f7fb;--card:#fff;--txt:#1b2733;--main:#0b6e99;}
+body.escuro{--bg:#10161d;--card:#1c2530;--txt:#e8eef4;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+header{background:var(--main);color:#fff;padding:14px 20px}
+header h1{margin:0;font-size:1.4rem}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+nav a{color:#fff;text-decoration:none;font-size:.85rem;padding:4px 10px;border-radius:14px;background:rgba(255,255,255,.18)}
+nav a:hover,nav a.ativo{background:#fff;color:var(--main)}
+main{max-width:900px;margin:24px auto;padding:0 16px}
+h2{border-left:6px solid var(--main);padding-left:10px}
+.card{background:var(--card);border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.btn,button{background:var(--main);color:#fff;border:0;padding:9px 16px;border-radius:8px;cursor:pointer;font-size:.95rem}
+.btn:hover,button:hover{opacity:.85}
+input,select{padding:9px;border:1px solid #aab;border-radius:8px;margin:4px 0;width:100%;max-width:340px}
+.oculto{display:none}
+.emoji{font-size:3rem;text-align:center}
+.resultado{margin-top:14px;padding:14px;border-radius:10px;background:rgba(11,110,153,.12)}
+.erro{color:#c0392b;font-weight:bold}
+footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
+#faq-lista .pergunta{cursor:pointer;font-weight:bold}

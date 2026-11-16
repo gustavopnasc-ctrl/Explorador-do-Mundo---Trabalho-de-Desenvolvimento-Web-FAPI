@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Europa | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-europa{--main:#2c3e9c;}
+#pagina-europa .destaque{border-top:5px solid #2c3e9c;}
+#pagina-europa h2{color:#2c3e9c;}
+</style></head>
+<body id="pagina-europa">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html" class=ativo>Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Europa</h2>
+<div class="card destaque"><div class="emoji">🏰</div><p>Berço de impérios, arte e gastronomia, com países próximos e fáceis de conectar.</p></div>
+<div class="card"><h3>Destinos imperdíveis</h3><ul><li>Paris, França</li><li>Roma, Itália</li><li>Lisboa, Portugal</li><li>Praga, Tchéquia</li></ul></div>
+<button id="btn-cur" onclick="mostrarCuriosidade()">Mostrar curiosidade</button>
+<div id="curiosidade" class="card oculto">💡 O Vaticano é o menor país do mundo, com cerca de 0,44 km².</div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página europa.html</footer>
+<script src="script.js"></script>
+</body></html>

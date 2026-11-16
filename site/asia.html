@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ásia | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-asia{--main:#d35400;}
+#pagina-asia .destaque{border-top:5px solid #d35400;}
+#pagina-asia h2{color:#d35400;}
+</style></head>
+<body id="pagina-asia">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html" class=ativo>Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Ásia</h2>
+<div class="card destaque"><div class="emoji">⛩️</div><p>O maior continente: tecnologia futurista convivendo com templos milenares.</p></div>
+<div class="card"><h3>Destinos imperdíveis</h3><ul><li>Tóquio, Japão</li><li>Kyoto, Japão</li><li>Bangkok, Tailândia</li><li>Dubai, Emirados Árabes</li></ul></div>
+<button id="btn-cur" onclick="mostrarCuriosidade()">Mostrar curiosidade</button>
+<div id="curiosidade" class="card oculto">💡 A Ásia concentra mais da metade da população mundial.</div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página asia.html</footer>
+<script src="script.js"></script>
+</body></html>

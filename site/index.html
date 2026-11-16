@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Início | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-index{--main:#0b6e99;}
+#pagina-index .destaque{border-top:5px solid #0b6e99;}
+#pagina-index h2{color:#0b6e99;}
+</style></head>
+<body id="pagina-index">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html" class=ativo>Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Início</h2>
+<div class="card destaque" id="hero"><h3 style="font-size:1.6rem;color:#0b6e99">Bem-vindo, viajante!</h3>
+<p>Descubra continentes, planeje roteiros e consulte dados reais com APIs.</p>
+<p id="frase" style="font-style:italic">Clique no botão para uma inspiração.</p>
+<button onclick="fraseAleatoria()">✨ Nova frase</button></div>
+<div class="grid"><div class="card"><div class="emoji">🗺️</div><p>6 continentes para conhecer</p></div>
+<div class="card"><div class="emoji">⛅</div><p>Clima em tempo real (API)</p></div>
+<div class="card"><div class="emoji">🏳️</div><p>Dados de países (API)</p></div></div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página index.html</footer>
+<script src="script.js"></script>
+</body></html>

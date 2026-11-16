@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dicas | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-dicas{--main:#8e44ad;}
+#pagina-dicas .destaque{border-top:5px solid #8e44ad;}
+#pagina-dicas h2{color:#8e44ad;}
+</style></head>
+<body id="pagina-dicas">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html" class=ativo>Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Dicas</h2>
+<div class="card destaque"><h3>Checklist da mala</h3>
+<label><input class="check" type="checkbox" onchange="contarChecks()" style="width:auto"> Passaporte/documentos</label><br>
+<label><input class="check" type="checkbox" onchange="contarChecks()" style="width:auto"> Carregador e adaptador</label><br>
+<label><input class="check" type="checkbox" onchange="contarChecks()" style="width:auto"> Protetor solar</label><br>
+<label><input class="check" type="checkbox" onchange="contarChecks()" style="width:auto"> Seguro viagem</label><br>
+<label><input class="check" type="checkbox" onchange="contarChecks()" style="width:auto"> Dinheiro/cartão internacional</label>
+<p id="progresso" class="resultado">0 de 5 itens na mala</p></div>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página dicas.html</footer>
+<script src="script.js"></script>
+</body></html>

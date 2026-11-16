@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contato | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-contato{--main:#e67e22;}
+#pagina-contato .destaque{border-top:5px solid #e67e22;}
+#pagina-contato h2{color:#e67e22;}
+</style></head>
+<body id="pagina-contato">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html" class=ativo>Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Contato</h2>
+<form class="card destaque" onsubmit="enviarContato(event)">
+<label>Nome<input id="nome"></label><label>E-mail<input id="email"></label>
+<label>Mensagem<input id="msg"></label><br><button type="submit">Enviar</button>
+<p id="retorno"></p></form>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página contato.html</footer>
+<script src="script.js"></script>
+</body></html>

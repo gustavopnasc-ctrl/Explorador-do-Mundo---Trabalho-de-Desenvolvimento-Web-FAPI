@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sobre | Explorador do Mundo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* CSS INTERNO - específico desta página */
+#pagina-sobre{--main:#6c3fb5;}
+#pagina-sobre .destaque{border-top:5px solid #6c3fb5;}
+#pagina-sobre h2{color:#6c3fb5;}
+</style></head>
+<body id="pagina-sobre">
+<header><h1>🌍 Explorador do Mundo</h1><nav><a href="index.html">Início</a><a href="sobre.html" class=ativo>Sobre</a><a href="america.html">América</a><a href="europa.html">Europa</a><a href="asia.html">Ásia</a><a href="africa.html">África</a><a href="oceania.html">Oceania</a><a href="galeria.html">Galeria</a><a href="roteiros.html">Roteiros</a><a href="dicas.html">Dicas</a><a href="faq.html">FAQ</a><a href="contato.html">Contato</a><a href="clima.html">API Clima</a><a href="paises.html">API Países</a><a href="cep.html">API CEP</a></nav>
+<button onclick="toggleTema()" style="margin-top:8px;background:#fff;color:#333">🌓 Tema claro/escuro</button></header>
+<main>
+<h2>Sobre</h2>
+<div class="card destaque"><p>O <strong>Explorador do Mundo</strong> é um projeto acadêmico que demonstra HTML, CSS em três níveis (inline, interno e externo) e JavaScript com consumo de APIs.</p>
+<p style="background:#efe6ff;padding:10px;border-radius:8px">Este bloco usa <em>CSS inline</em>.</p>
+<p>Use o botão <b>Tema</b> no topo para alternar claro/escuro (ação de JS).</p></div>
+<button onclick="toggleTema()">Alternar tema agora</button>
+</main>
+<footer>Projeto HTML + CSS + JS - Explorador do Mundo - página sobre.html</footer>
+<script src="script.js"></script>
+</body></html>
